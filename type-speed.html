@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TyperTesterSpeed</title>
+    <!-- STYLES AND HELPERS  bootstrap 4 -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/type-speed-helpers.css">
+</head>
+
+<body class="bg-dark text-white">
+    <header class="bg-secondary text-center p-3 mb-5">
+        <h1>BoomerTyper
+            <img src="boomer-monster-ultra-small.png" alt="" width="64px" height="64px"></h1>
+    </header>
+
+    <div class="container text-center">
+
+
+        <!-- Wordss and Input -->
+        <!-- span#seconds , h3#current-word , input#word-input -->
+        <div class="row">
+            <div class="col-md-6 mx-auto">
+                <p class="lead">
+                    Type the Word on the page within
+                    <span class="text-primary" id="seconds">
+                        10
+                    </span>
+                    seconds
+                </p>
+                <h3 class="display-4 mb-5" id="current-word">
+                    Hello
+                </h3>
+
+                <!-- word input is here -->
+                <input type="text" class="form-control form-control-lg" placeholder="start typing...." id="word-input"
+                    autofocus />
+
+                <!-- h3#message span#time span#score -->
+
+                <!-- message will display after some action is taken -->
+                <h3 class="mt-3" id="message"></h3>
+
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <h3>
+                            Time Left:
+                            <span id="time">0</span>
+                        </h3>
+                    </div>
+                    <div class="col-md-6">
+                        <h3>
+                            Score:
+                            <span id="score">0</span>
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <h3 id="difficulty">
+                        Difficulty: Easy
+                    </h3>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-md-12">
+                        <div class="card card-body bg-secondary text-white">
+                            <h5>Instructions</h5>
+                            <p>Type each word in a given amount of seconds to score.
+                                To play again, just type the current word.
+                                Your score will reset <br></br>
+
+                                NOTE: On first page load.. let timer run out.
+                                <b>letting the timer run out once, and then typing the first word on the screen will
+                                    initialize the game</b>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- end: c  -->
+                <select name="difficulty" id="difficulty-select">
+                    <option value="easy">easy</option>
+                    <option value="medium">medium</option>
+                    <option value="hard">hard</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+    <script src="typer.js"></script>
+</body>
+
+</html>

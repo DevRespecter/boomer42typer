@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo:400,700&display=swap');
+:root{
+    --color-one: #42a;
+    --color-two: #aaa3aa;
+    --color-three: #1cf3afee;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Arvo", serif;
+}
+body::selection{
+    color: var(--color-three);
+}
